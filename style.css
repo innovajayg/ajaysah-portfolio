@@ -1,58 +1,94 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #0F172A;
-  background: #F8FAFC;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F8FAFC;
+    color: #0F172A;
 }
-header {
-  background: #0F172A;
-  color: white;
-  padding: 15px 30px;
+
+.cover img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #dcdcdc;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-}
+
 .hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #0F172A, #2563EB);
-  color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0F172A, #2563EB);
+    color: white;
 }
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: white;
-  color: #2563EB;
-  text-decoration: none;
-  border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background: white;
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
 .section {
-  max-width: 800px;
-  margin: auto;
-  padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
 }
-form input, form textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 12px;
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
 }
-button {
-  background: #2563EB;
-  color: white;
-  border: none;
-  padding: 12px 20px;
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
+
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #0F172A;
-  color: white;
+    text-align: center;
+    padding: 25px;
+    background: #0F172A;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
 }
